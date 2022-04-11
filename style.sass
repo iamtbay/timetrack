@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap')
+$white: #fff
+$blue: hsl(246, 80%, 60%)
+$lightOrange: hsl(15, 100%, 70%)  //(work): 
+$softBlue: hsl(195, 74%, 62%) //(play): 
+$lightRed: hsl(348, 100%, 68%) //(study): 
+$limeGreen: hsl(145, 58%, 55%) //(exercise): 
+$violet: hsl(264, 64%, 52%) //(social): 
+$softOrange:  hsl(43, 84%, 65%) //(self care):
+
+// bgs
+$veryDarkBlue: hsl(226, 43%, 10%)
+$darkBlue: hsl(235, 46%, 20%)
+$desaturatedBlue: hsl(235, 45%, 61%)
+$paleBlue: hsl(236, 100%, 87%)
+$fontFam: 'Rubik', sans-serif
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    color: $white
+.lightOrange
+    background-color: $lightOrange
+.softBlue
+    background-color: $softBlue
+.lightRed
+    background-color: $lightRed
+.limeGreen
+    background-color: $limeGreen
+.violet
+    background-color: $violet
+.softOrange
+    background-color: $softOrange
+
+body
+    min-height: 100vh
+    font-size: 18px
+    font-family: $fontFam
+    background-color: $veryDarkBlue
+.main
+    width: 100%
+    padding: 5%
+.infoOfCard
+    cursor: pointer
+    &:hover
+        background-color: $desaturatedBlue !important
+.dots
+    cursor: pointer
+    &:hover
+        color: #fff2 !important
+.days 
+    cursor: pointer
+    &:hover
+        color: $white !important
+.active
+    color: $white !important
+@media screen and (max-width:419px)
+    .cardContainer
+        width: 90%
+        margin: auto
+        padding: 5% 0%
+        
+        .personCard
+            width: 100%
+            background-color: $darkBlue
+            border-radius: 8px
+            margin: auto
+            display: flex
+            flex-direction: column
+            justify-content: center
+            justify-items: center
+            height: 100%
+            .titleContainer
+                background-color: $blue
+                border-radius: 8px
+                display: flex
+                flex-direction: row
+                padding: 3%
+                justify-content: center
+                align-items: center
+                height: 80%
+                .imagePerson
+                    width: 25%
+                    .image
+                        width: 100%
+                        border: 1px solid $white
+                        border-radius: 50%
+                .titlePerson
+                    padding: 1% 3%
+                    .reportFor
+                        font-size: 0.7rem
+                        font-weight: 300
+                        color: $paleBlue !important
+                    .nameOfYou
+                        font-size: 1.8rem
+                        font-weight: 300
+                        color: $paleBlue !important
+            .daysContainer
+                display: flex
+                justify-content: space-around
+                padding: 5% 0%
+                .days
+                    font-weight: 300
+                    color: $paleBlue !important
+        .otherCards
+            border-radius: 8px
+            margin: auto
+            width: 100%
+            margin-top: 5%
+            .imgOfCard
+                display: flex
+                border-radius: 8px
+                justify-content: flex-end
+                z-index: -99
+                height: 3vh
+                overflow: hidden
+                width: 100%
+                img
+                    height: 5vh
+            .infoOfCard
+                width: 100%
+                height: 100%
+                z-index: 1
+                background-color: $darkBlue
+                border-radius: 8px
+                padding: 10% 5%
+                .titles
+                    display: flex
+                    justify-content: space-between
+                    .title
+                        font-size: 1rem
+                        font-weight: 400
+                    .dots
+                        letter-spacing: 3px
+                .times
+                    display: flex
+                    align-items: center
+                    line-height: 150%
+                    justify-content: space-between
+                    margin-top: 5%
+                    .hours
+                        font-weight: 400
+                    .lastWeek
+                        font-weight: 400
+                        font-size: 0.8rem
+                        color: $paleBlue
+@media screen and (min-width:420px)
+    @import "./_big-screen"

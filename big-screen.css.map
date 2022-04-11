@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,GAAG;CAAG",
+    "sources": [
+        "big-screen.sass"
+    ],
+    "names": [],
+    "file": "big-screen.css"
+}

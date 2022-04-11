@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+}
+
+.lightOrange {
+  background-color: #ff8c66;
+}
+
+.softBlue {
+  background-color: #56c2e6;
+}
+
+.lightRed {
+  background-color: #ff5c7c;
+}
+
+.limeGreen {
+  background-color: #4acf81;
+}
+
+.violet {
+  background-color: #7536d3;
+}
+
+.softOrange {
+  background-color: #f1c65b;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  background-color: #0f1424;
+}
+
+.main {
+  width: 100%;
+  padding: 5%;
+}
+
+.infoOfCard {
+  cursor: pointer;
+}
+
+.infoOfCard:hover {
+  background-color: #6f76c8 !important;
+}
+
+.dots {
+  cursor: pointer;
+}
+
+.dots:hover {
+  color: #fff2 !important;
+}
+
+.days {
+  cursor: pointer;
+}
+
+.days:hover {
+  color: #fff !important;
+}
+
+.active {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 419px) {
+  .cardContainer {
+    width: 90%;
+    margin: auto;
+    padding: 5% 0%;
+  }
+  .cardContainer .personCard {
+    width: 100%;
+    background-color: #1c1f4a;
+    border-radius: 8px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    height: 100%;
+  }
+  .cardContainer .personCard .titleContainer {
+    background-color: #5847eb;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 3%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80%;
+  }
+  .cardContainer .personCard .titleContainer .imagePerson {
+    width: 25%;
+  }
+  .cardContainer .personCard .titleContainer .imagePerson .image {
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  .cardContainer .personCard .titleContainer .titlePerson {
+    padding: 1% 3%;
+  }
+  .cardContainer .personCard .titleContainer .titlePerson .reportFor {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #bdc1ff !important;
+  }
+  .cardContainer .personCard .titleContainer .titlePerson .nameOfYou {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #bdc1ff !important;
+  }
+  .cardContainer .personCard .daysContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 5% 0%;
+  }
+  .cardContainer .personCard .daysContainer .days {
+    font-weight: 300;
+    color: #bdc1ff !important;
+  }
+  .cardContainer .otherCards {
+    border-radius: 8px;
+    margin: auto;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .cardContainer .otherCards .imgOfCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    z-index: -99;
+    height: 3vh;
+    overflow: hidden;
+    width: 100%;
+  }
+  .cardContainer .otherCards .imgOfCard img {
+    height: 5vh;
+  }
+  .cardContainer .otherCards .infoOfCard {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #1c1f4a;
+    border-radius: 8px;
+    padding: 10% 5%;
+  }
+  .cardContainer .otherCards .infoOfCard .titles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cardContainer .otherCards .infoOfCard .titles .title {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .cardContainer .otherCards .infoOfCard .titles .dots {
+    letter-spacing: 3px;
+  }
+  .cardContainer .otherCards .infoOfCard .times {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 150%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 5%;
+  }
+  .cardContainer .otherCards .infoOfCard .times .hours {
+    font-weight: 400;
+  }
+  .cardContainer .otherCards .infoOfCard .times .lastWeek {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #bdc1ff;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .cardContainer {
+    width: 100%;
+    margin: auto;
+    padding: 5% 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cardContainer .personCard {
+    width: 25%;
+    background-color: #1c1f4a;
+    border-radius: 8px;
+    margin: 0 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: flex-start;
+  }
+  .cardContainer .personCard .titleContainer {
+    background-color: #5847eb;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15% 10%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .cardContainer .personCard .titleContainer .imagePerson {
+    width: 35%;
+    padding: 0 2%;
+  }
+  .cardContainer .personCard .titleContainer .imagePerson .image {
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  .cardContainer .personCard .titleContainer .titlePerson {
+    padding: 0 25% 15% 0;
+    margin-top: 10%;
+  }
+  .cardContainer .personCard .titleContainer .titlePerson .reportFor {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #bdc1ff !important;
+  }
+  .cardContainer .personCard .titleContainer .titlePerson .nameOfYou {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #bdc1ff !important;
+  }
+  .cardContainer .personCard .daysContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 10% 12%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cardContainer .personCard .daysContainer .days {
+    font-weight: 300;
+    padding: 5% 0;
+    color: #bdc1ff !important;
+  }
+  .cardContainer .otherContainer {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    justify-items: space-between;
+    -webkit-column-gap: 2%;
+            column-gap: 2%;
+    grid-row-gap: 5%;
+  }
+  .cardContainer .otherContainer .otherCards {
+    border-radius: 8px;
+    width: 30%;
+    height: 47%;
+  }
+  .cardContainer .otherContainer .otherCards .imgOfCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    z-index: -99;
+    height: 20%;
+    overflow: hidden;
+    width: 100%;
+  }
+  .cardContainer .otherContainer .otherCards .imgOfCard img {
+    height: 7vh;
+  }
+  .cardContainer .otherContainer .otherCards .infoOfCard {
+    width: 100%;
+    z-index: 1;
+    background-color: #1c1f4a;
+    border-radius: 8px;
+    padding: 10% 5%;
+    height: 80%;
+  }
+  .cardContainer .otherContainer .otherCards .infoOfCard .titles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 2%;
+  }
+  .cardContainer .otherContainer .otherCards .infoOfCard .titles .title {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .cardContainer .otherContainer .otherCards .infoOfCard .titles .dots {
+    letter-spacing: 3px;
+  }
+  .cardContainer .otherContainer .otherCards .infoOfCard .times {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    line-height: 150%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 5%;
+    padding: 5% 2%;
+  }
+  .cardContainer .otherContainer .otherCards .infoOfCard .times .hours {
+    font-weight: 400;
+  }
+  .cardContainer .otherContainer .otherCards .infoOfCard .times .lastWeek {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #bdc1ff;
+    margin-top: 5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
